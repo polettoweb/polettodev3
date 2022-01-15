@@ -1,0 +1,212 @@
+[
+    {
+      "path": "missguided",
+      "description": "I was part of a big team maintaining the two company's websites (Missguided and Mennace) built with Magento, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components.",
+      "alt": "Highly customised, multilanguage Magento eCommerce website",
+      "src": "missguided-logo.png",
+      "srcDevices": "missguided-devices.png",
+      "tags": [
+        "React",
+        "Magento",
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "Webpack"
+      ],
+      "link": "https://missguided.co.uk",
+      "linkTitle": "Missguided",
+      "websites": [
+        {
+          "link": "https://www.missguided.co.uk",
+          "title": "Missguided Website"
+        }
+      ],
+      "role": "Frontend Software Engineer"
+    },
+    {
+      "path": "mag",
+      "description": "Various websites built and maintained for the MAG Airports group using VueJS as a frontend framework and deep diving into its ecosystem. VueX for state management, NuxtJS for server-side rendering, Sass for styling, Webpack as development bundler.",
+      "alt": "Various websites built and maintained for the MAG Airports group using VueJS as a frontend framework and deep diving into its ecosystem. VueX for state management, NuxtJS for server-side rendering, Sass for styling, Webpack as development bundler.",
+      "src": "mag-logo-white.png",
+      "srcDevices": "mag-devices.png",
+      "tags": [
+        "VueJS",
+        "VueX",
+        "Server-Side Rendering",
+        "Razor",
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "GraphQL",
+        "Webpack"
+      ],
+      "link": "https://www.manchesterairport.co.uk",
+      "linkTitle": "Manchester Airport Group",
+      "websites": [
+        {
+          "link": "https://www.manchesterairport.co.uk",
+          "title": "Manchester Airport Official Website"
+        },
+        {
+          "link": "https://www.stanstedairport.com/",
+          "title": "Stansted Airport Official Website"
+        },
+        {
+          "link": "https://www.eastmidlandsairport.com/",
+          "title": "East Midlands Official Airport"
+        },
+        {
+          "link": "https://www.escapelounges.com/",
+          "title": "Airports Escape lounges Website"
+        }
+      ],
+      "role": "UI Engineer"
+    },
+    {
+      "path": "mennace",
+      "description": "I was part of a big team maintaining the two company's websites (Missguided and Mennace) built with Magento and a Wordpress blog, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components.",
+      "alt": "Highly customised, multilanguage Magento eCommerce website",
+      "src": "mennace-logo.png",
+      "srcDevices": "mennace-devices.png",
+      "tags": [
+        "React",
+        "Magento",
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "Webpack",
+        "Wordpress"
+      ],
+      "link": "https://mennace.com/uk",
+      "linkTitle": "Mennace",
+      "websites": [
+        {
+          "link": "https://www.mennace.com",
+          "title": "Mennace Menswear Website"
+        }
+      ],
+      "role": "Frontend Software Engineer"
+    },
+    {
+      "path": "stoves",
+      "description": "Project developed on Umbraco MVC using HTML, Razor and JAvascript for frontend. Creation of tools in Javascript like product configurator and new carousels",
+      "alt": "Responsive website made on top of Umbraco cms.",
+      "src": "stoves-logo.png",
+      "srcDevices": "stoves-devices.png",
+      "tags": [
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "Umbraco"
+      ],
+      "link": "http://www.stoves.co.uk",
+      "linkTitle": "Stoves UK",
+      "websites": [
+        {
+          "link": "https://www.stoves.co.uk",
+          "title": "Stoves Aplliances Website"
+        }
+      ],
+      "role": "Frontend Web Developer"
+    },
+    {
+      "path": "lanterntankard",
+      "description": "Single page website built in HTML, Sass, CSS animations and Vanilla JS . Fully responsive and SEO oriented.",
+      "alt": "Responsive single page website built from scratch",
+      "src": "lanterntankard-logo.png",
+      "srcDevices": "lanterntankard-devices.png",
+      "tags": [
+        "Sass",
+        "Javascript",
+        "CSS animations"
+      ],
+      "link": "http://www.thelanterntankard.com",
+      "linkTitle": "The Lantern Tankard",
+      "websites": [
+        {
+          "link": "https://www.thelanterntankard.co.uk",
+          "title": "The Lantern Tankard Website"
+        }
+      ],
+      "role": "Frontend Web Developer"
+    },
+    {
+      "path": "belling",
+      "alt": "Responsive website made on top of Umbraco cms.",
+      "description": "Project developed on Umbraco MVC using HTML, Razor and JAvascript for frontend. Creation of bespoke tools in Javascript like product configurator and new carousels",
+      "src": "belling-logo.png",
+      "srcDevices": "belling-devices.png",
+      "tags": [
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "Umbraco"
+      ],
+      "link": "http://www.belling.co.uk",
+      "linkTitle": "Belling UK",
+      "websites": [
+        {
+          "link": "https://www.belling.co.uk",
+          "title": "Belling Aplliances Website"
+        }
+      ],
+      "role": "Frontend Web Developer"
+    },
+    {
+      "path": "aquapura",
+      "description": "Project developed on Wordpress using PHP, Javascript and Sass for frontend. Creation of features in Javascript like the Hydration tool, WebGL for weather feedback and animations",
+      "alt": "Responsive website based on Wordpress and developed from scratch",
+      "src": "aquapura-logo.png",
+      "srcDevices": "aquapura-devices.png",
+      "tags": [
+        "Sass",
+        "Javascript",
+        "JSON",
+        "AJAX",
+        "RESTful API",
+        "Wordpress"
+      ],
+      "link": "https://aqua-pura.com",
+      "linkTitle": "Aqua Pura UK",
+      "websites": [
+        {
+          "link": "https://www.aqua-pura.com",
+          "title": "Aqua Pura Website"
+        }
+      ],
+      "role": "Frontend Web Developer"
+    },
+    {
+      "path": "bbvenezia",
+      "description": "Project developed on pure HTML and CSS with a touch of Javascript. Multi page / multi language website built for a Bed and Breakfast in Venice - Italy ",
+      "alt": "Responsive website built for a Bed&amp;Breakfast in Venice using HTML5, Sass, jQuery, and PHP for the online booking.",
+      "src": "bbvenezia-logo.png",
+      "srcDevices": "bbvenezia-devices.png",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "AJAX",
+        "RESTful API"
+      ],
+      "link": "http://www.bbvenezia.com",
+      "linkTitle": "B&amp;B Venezia",
+      "websites": [
+        {
+          "link": "https://www.bbvenezia.com",
+          "title": "B&B Venezia Website"
+        }
+      ],
+      "role": "Web Designer Freelance"
+    }
+]

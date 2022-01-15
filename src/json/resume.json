@@ -1,0 +1,79 @@
+[
+  {
+    "text": "I've joined this thriving company based in Paris for a full remote postion as Engineering manager. I am leading a team of talented engineers helping the company to build their next generation product",
+    "title": "Engineering Manager",
+    "location": "Amsterdam / Paris",
+    "company": "Mindsay",
+    "date": "2021 - Now"
+  },
+  {
+    "text": "Part of the team that build maintain and improve the main products of the company. Furthermore, helping introducing Scrum methodology in the dev team and acting as Scrum Master",
+    "title": "Senior/Lead Frontend Developer & Scrum Master",
+    "location": "Amsterdam",
+    "company": "Storyteq B.V.",
+    "date": "2021"
+  },
+  {
+    "text": "I've join a consultancy for working in various roles within the frontend space using VueJs, ReactJS and GraphQL technologies",
+    "title": "Frontend Developer (Consultancy)",
+    "location": "Amsterdam",
+    "company": "Cygni Netherlands B.V.",
+    "date": "2020"
+  },
+  {
+    "text": "I am part of a team for iterating and improving a co-browsing software. My role is to handle the frontend part using VueJs",
+    "title": "Frontend Engineer (SaaS)",
+    "location": "Amsterdam",
+    "company": "Surfly B.V.",
+    "date": "2020"
+  },
+  {
+    "text": "I am part of a freshly built team for creating the new iteration of an all-in-one event software. My role is to re-develop the frontend part using VueJs and GraphQL",
+    "title": "Frontend Developer (SaaS)",
+    "location": "Amsterdam",
+    "company": "Momice B.V.",
+    "date": "2019 - 2020"
+  },
+  {
+    "text": "I was part of a big project for migrating a massive multi-tennancy website built with Razor MVC into a new era. As part of the team I am maintening the company's websites, migrating them using CI/CD into VueJS components and NuxtJS, improving performance and updating/refactoring the existent codebase. Furthermore, I started mentoring junior developers with a pair program system.",
+    "title": "UI Engineer (Corporation)",
+    "location": "Manchester",
+    "company": "Manchester Airport Group LTD",
+    "date": "2018 - 2019"
+  },
+  {
+    "text": "I was part of a big team maintening the two company's websites built with Magento, reshaping them with a more up-to-date look and feel, improving their performance, introducing Webpack bundler and React components",
+    "title": "Frontend Software Engineer (eCommerce)",
+    "location": "Manchester",
+    "company": "Missguided LTD",
+    "date": "2017 - 2018"
+  },
+  {
+    "text": "Maintenance and development of the frontend part of various websites with or without CMS. Develop, refinement and management of the automated development environment (Gulp, GIT, Webpack, browsersynch, etc), of RESTful APIs between Wordpress and other services such as OpenWeather and social networks. Specialisation in Frontend Development and UX experience.",
+    "title": "Frontend Web Developer (Digital Agency)",
+    "location": "Manchester",
+    "company": "Shoot The Moon LTD",
+    "date": "2017 - 2017"
+  },
+  {
+    "text": "Maintenance and development of e-commerce websites. My role covers all aspect of development new websites based in Magento and Wordpress. From the creation of the development environment to the release in production. I am specialized in Front end development but I work on the backend too. We use code versioning and I am coordinating in-house and external developers to merge the code into the final product.",
+    "title": "Software Developer (eCommerce)",
+    "location": "London",
+    "company": "Galt One LTD",
+    "date": "2015 - 2017"
+  },
+  {
+    "text": "The beginning of my developer career. A freelance role that allowed me to develop projects from the wireframe to the production code. Managing clients and their expectations. Work independently and with tight deadlines.",
+    "title": "Freelance Web Developer",
+    "location": "London",
+    "company": "Freelance",
+    "date": "2014 - 2015"
+  },
+  {
+    "text": "Since I've been gifted my first PC in 1997, I've passion and curiosity for web related technology. I've played around with some of the most ancient tools for webdesign like Adobe FireWorks, Microsoft Frontpage, Apple iWeb, Macromedia Dreamweaver and learnt web standards from HTML 3.2 / CSS (1)",
+    "title": "Developer for hobby",
+    "location": "Venice",
+    "company": "Freelance",
+    "date": "1997 - 2013"
+  }
+]
