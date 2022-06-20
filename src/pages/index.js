@@ -19,18 +19,18 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <div className="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-between pt-16 pb-24">
-        <div className="text-4xl font-bold w-full lg:w-3/5 items-center text-center lg:text-left pb-8">
+      <div className="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-center pt-16 pb-24">
+        <div className="text-4xl font-bold w-full lg:w-full xl:w-3/5 items-center text-center xl:text-left pb-8">
           <h1 className="font-normal">
             <span className="leading-tight">Hi, I'm Marco,</span>
             <br />
-            <span className="text-copy-secondary leading-tight typer-wrapper">
+            <span className="text-copy-secondary leading-tight typer-wrapper relative">
               <ReactTypingEffect text={role} speed={100} eraseDelay={1500} eraseSpeed={10} typingDelay={100} />
             </span>
           </h1>
         </div>
         <Img
-          className="lg:w-2/5 hidden lg:inline-block relative z-10"
+          className="z-10 mt-12"
           alt="Marco's fab portrait"
           fixed={data.file.childImageSharp.fixed}
         />
@@ -54,19 +54,16 @@ const Home = ({ data }) => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex-1 text-lg sm:text-xl text-justify sm:text-left main-text">
               <p>
-                I am a passionate frontend developer and mentor based in Amsterdam. I am originally from Venice, and I
-                love to work with <span>JavaScript</span>, CSS and everything around user interfaces. I am using daily
-                <span>VueJS</span>, <span>GraphQL</span> and <span>Sass</span> for a consultancy in the centre of
-                Amsterdam. My goal is to build clean, performant and accessible user interfaces where the user experience
-                is a focal point. Helping trainee and Junior developers to grow and learn is a significant part of my job
-                and my <span>personal mission</span>. My job is also my passion and, therefore, seeking out new
-                technologies and staying up-to-date on industry trends and advancements are more a pleasure than a duty.
+                I am an Engineering Manager and a Lead front-end developer with experience building and managing product-focussed teams. My tasks include handling the engineering team in delivering on time and with quality code, helping them grow in their role and guiding them towards their career goals.
+                As a developer, I focus on the front-end. I work extensively with JavaScript (<span>Vue</span> and <span>React</span>) and other UX and UI technologies (<span>CSS</span>, <span>GraphQL</span>, <span>CD/CI</span>, unit and e2e <span>testing</span>, development experience, etc.).<br />
+                <span>Mentoring and teaching developers to grow and learn is a big part of my job and personal mission.</span> Furthermore, I like seeking out new technologies and staying up-to-date on industry trends and advancements.
+                In addition to my roles as a front-end and engineering manager, I have often served as a Scrum Master, helping companies introduce an agile methodology or improve the existing one.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout >
   );
 };
 

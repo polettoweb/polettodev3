@@ -12,7 +12,7 @@ const Header = ({ theme, action, isOpen, toggle, data }) => {
         <div>
           <div>
             <Link to="/">
-              {/* src={theme === 'light' ? logoLight : theme === 'sepia' ? logoSepia : logo} */}
+              {/* src={theme === 'light' ? logoLight : theme === 'relax' ? logoSepia : logo} */}
               <Logo theme={theme} />
             </Link>
           </div>

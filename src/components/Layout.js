@@ -3,12 +3,12 @@ import Header from './Header'
 import Footer from './Footer'
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [theme, setTheme] = useState("sepia")
+  const [theme, setTheme] = useState("relax")
   const toggle = () => {
     setIsOpen(!isOpen)
   }
   useEffect(() => {
-    setTheme(localStorage.getItem("theme") || "sepia")
+    setTheme(localStorage.getItem("theme") || "relax")
   }, [])
 
   return (

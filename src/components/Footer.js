@@ -5,7 +5,7 @@ const Footer = ({ theme }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className={`text-white m-0 p-0 bubble-footer ${theme === 'sepia' ? 'bg-copy-primary' : 'bg-copy-secondary'}`}>
+    <footer className={`text-white m-0 p-0 bubble-footer ${theme === 'relax' ? 'bg-copy-primary' : 'bg-copy-secondary'}`}>
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-4 svg-top">
         <div className="my-6 lg:my-0">
           <div>&copy; Marco Poletto {year}.</div>
