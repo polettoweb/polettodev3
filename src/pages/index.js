@@ -3,6 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import { graphql } from "gatsby";
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
+import Latest from '../components/latest';
 
 const Home = ({ data }) => {
   const role = [
@@ -32,7 +33,7 @@ const Home = ({ data }) => {
         <Img
           className="z-10 mt-12"
           alt="Marco's fab portrait"
-          fixed={data.file.childImageSharp.fixed}
+          fixed={data && data.file.childImageSharp.fixed}
         />
         <svg
           className="absolute rotate-45 bg-octa"
@@ -63,7 +64,8 @@ const Home = ({ data }) => {
           </div>
         </div>
       </div>
-    </Layout >
+      <Latest data={data && data.allMarkdownRemark.edges} />
+    </Layout>
   );
 };
 
@@ -77,6 +79,23 @@ export const query = graphql`
         # Makes it trivial to update as your page's design changes.
         fixed(width: 403, height: 623) {
           ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    allMarkdownRemark {
+      edges {
+        node {
+          html
+          id
+          timeToRead
+          frontmatter {
+            # Assumes you're using title in your frontmatter.
+            title
+            slug
+            tags
+            date (formatString: "MMMM D, Y")
+            summary
+          }
         }
       }
     }

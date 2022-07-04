@@ -1,0 +1,124 @@
+.experience {
+  padding-bottom: 100px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 90%;
+    background-color: var(--bg-background-secondary);
+    left: 50%;
+    @media (max-width: 767px) {
+      left: 96%;
+    }
+  }
+
+  &__container {
+    padding: 0 20px;
+
+    h3 {
+      padding: 0;
+    }
+
+    ul {
+      width: 100%;
+      margin: 32px auto;
+
+      .expcard {
+        clear: both;
+        width: calc(50% - 30px);
+        height: auto;
+        position: relative;
+        background-color: var(--bg-background-secondary);
+        transition: all 0.5s cubic-bezier(0.17, 0.67, 0.5, 1);
+
+        @media (max-width: 767px) {
+          width: 88%;
+          margin-bottom: 100px;
+        }
+
+        &:nth-child(odd) {
+          float: left;
+
+          &:before {
+            position: absolute;
+            content: "";
+            font-size: 30px;
+            width: 0;
+            height: 0;
+            border-top: 16px solid var(--text-copy-secondary);
+            border-right: 16px solid transparent;
+            right: -16px;
+            top: 0;
+          }
+
+          .dot {
+            right: -44px;
+            @media (max-width: 767px) {
+              right: -7.8vw;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          float: right;
+          @media (max-width: 767px) {
+            float: left;
+          }
+
+          &:before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 16px solid var(--text-copy-secondary);
+            border-left: 16px solid transparent;
+            left: -16px;
+            top: 0;
+            @media (max-width: 767px) {
+              left: auto;
+              right: -16px;
+              border-left: none;
+              border-right: 16px solid transparent;
+            }
+          }
+
+          .dot {
+            left: -41px;
+            @media (max-width: 767px) {
+              left: auto;
+              right: -7.8vw;
+            }
+          }
+        }
+
+        &:not(:nth-child(1)) {
+          margin-top: -60px;
+        }
+
+        &__text {
+          p {
+            padding: 0 20px;
+
+            &.expcard__location {
+              padding-bottom: 10px;
+            }
+
+            &.expcard__date {
+              padding-bottom: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .dot {
+          font-size: 30px;
+          position: absolute;
+          top: -15px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
