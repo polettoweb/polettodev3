@@ -8,7 +8,7 @@ import Github from '../components/partials/github'
 const projects = () => {
   return (
     <Layout>
-      <div className="container mx-auto py-16">
+      <div className="container mx-auto py-16 flex-grow">
         {
           projectsData.map(project => (
             <div

@@ -17,7 +17,7 @@ const Footer = ({ theme }) => {
             >
             &nbsp;|&nbsp;
             <a
-              href="sitemap.xml"
+              href="sitemap-index.xml"
               className="text-white font-normal"
             >Sitemap</a
             >

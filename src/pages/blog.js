@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 const blog = ({ data }) => {
   return (
     <Layout>
-      <div className="container blog mx-auto py-16">
+      <div className="container blog mx-auto py-16 flex-grow">
         {
           data && data.allMarkdownRemark.edges.map(post => (
 
@@ -43,7 +43,7 @@ export default blog
 
 export const query = graphql`
   query Getblog {
-    allMarkdownRemark(skip: 0, limit: 3, sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(skip: 0, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           html

@@ -20,7 +20,7 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
-      <div className="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-center pt-16 pb-24">
+      <div className="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-center pt-16 pb-24 flex-grow">
         <div className="text-4xl font-bold w-full lg:w-full xl:w-3/5 items-center text-center xl:text-left pb-8">
           <h1 className="font-normal">
             <span className="leading-tight">Hi, I'm Marco,</span>
@@ -82,7 +82,7 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(skip: 0, limit: 3, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           html
