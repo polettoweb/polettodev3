@@ -3,7 +3,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import { graphql } from "gatsby";
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
-import Latest from '../components/latest';
+import Latest from '../components/Latest';
 
 const Home = ({ data }) => {
   const role = [
