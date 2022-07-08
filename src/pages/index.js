@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect';
+import { Helmet } from 'react-helmet';
 import { graphql } from "gatsby";
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
@@ -20,6 +21,13 @@ const Home = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Home | Poletto.dev | Marco Poletto | Engineering Manager | Mentor</title>
+        <meta charSet="utf-8" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name="author" content="Marco Poletto" />
+        <meta name="description" content="Marco Poletto, Engineering Manager, Frontend Web Developer, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor" />
+      </Helmet>
       <div className="hero container mx-auto flex flex-col lg:flex-row flex-wrap justify-center pt-16 pb-24 flex-grow">
         <div className="text-4xl font-bold w-full lg:w-full xl:w-3/5 items-center text-center xl:text-left pb-8">
           <h1 className="font-normal">

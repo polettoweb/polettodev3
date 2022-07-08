@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout'
 import projectsData from "../json/projects.json";
 import Codepen from '../components/partials/codepen'
@@ -8,6 +9,13 @@ import Github from '../components/partials/github'
 const projects = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Projects | Code | Poletto.dev | Marco Poletto | Engineering Manager | Mentor</title>
+        <meta charSet="utf-8" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name="author" content="Marco Poletto" />
+        <meta name="description" content="Marco Poletto, Engineering Manager, Frontend Web Developer, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor" />
+      </Helmet>
       <div className="container mx-auto py-16 flex-grow">
         {
           projectsData.map(project => (

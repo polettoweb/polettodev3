@@ -1,11 +1,19 @@
-import { Link, graphql } from 'gatsby'
 import React from 'react'
+import { Link, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/Layout'
 // import PaginationPosts from "../components/PaginationPosts";
 
 const blog = ({ data }) => {
   return (
     <Layout>
+      <Helmet>
+        <title>Blog | Poletto.dev | Marco Poletto | Engineering Manager | Mentor</title>
+        <meta charSet="utf-8" />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name="author" content="Marco Poletto" />
+        <meta name="description" content="Marco Poletto, Engineering Manager, Frontend Web Developer, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor" />
+      </Helmet>
       <div className="container blog mx-auto py-16 flex-grow">
         {
           data && data.allMarkdownRemark.edges.map(post => (

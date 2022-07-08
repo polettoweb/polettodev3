@@ -3,7 +3,9 @@ const siteUrl = process.env.URL || `https://www.poletto.dev`
 
 module.exports = {
   siteMetadata: {
-    title: `polettodev`,
+    title: "Marco Poletto | Web Developer | Engineering Manager | Mentor",
+    description:
+      "Marco Poletto Frontend Web Developer, Engineering Manager, Tech enthusiast, Coffee aficionado, Gamer, mentor, tutor",
     siteUrl: `https://www.poletto.dev`,
   },
   plugins: [
