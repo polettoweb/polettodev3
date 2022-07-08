@@ -1,3 +1,161 @@
+@tailwind base;
+
+/* Your own custom base styles */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Your own custom component styles */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+.dark {
+  --bg-background-primary: rgb(9, 10, 11);
+  --bg-background-secondary: rgb(25, 27, 31);
+  --text-copy-primary: rgba(255, 255, 255, 0.85);
+  --text-copy-secondary: rgb(62, 176, 239);
+}
+
+.light {
+  --bg-background-primary: white;
+  --bg-background-secondary: rgb(245, 228, 234);
+  --text-copy-primary: rgb(45, 55, 72);
+  --text-copy-secondary: rgb(43, 108, 176);
+}
+
+.relax {
+  --bg-background-primary: rgb(241, 231, 208);
+  --bg-background-secondary: rgb(220, 195, 138);
+  --text-copy-primary: rgb(67, 52, 34);
+  --text-copy-secondary: rgb(0, 166, 114);
+}
+
+h1,
+h2 {
+  @apply font-normal;
+}
+
+a {
+  @apply text-copy-secondary;
+
+  &:not(.pagination) {
+    border-color: transparent;
+  }
+
+  &:not(.pagination, .theme, .home-logo):hover {
+    @apply border-copy-secondary;
+  }
+}
+
+h2 > a:hover,
+h3 > a:hover {
+  @apply border-0;
+}
+
+nav .active:not(.home) {
+  @apply pb-1 border-b-2 border-copy-secondary;
+}
+
+.main-text span {
+  @apply text-copy-secondary;
+}
+
+.search-highlighted,
+.search-hover:hover {
+  background: var(--bg-background-secondary);
+}
+
+.content-wrapper {
+  transition: background-color 0.25s;
+}
+
+.bg-octa {
+  top: -5%;
+  right: -20%;
+  width: 80%;
+  height: 80%;
+  pointer-events: none;
+  overflow-x: hidden;
+  opacity: 0.6;
+}
+
+.typer-wrapper * {
+  @apply text-copy-secondary leading-tight text-6xl;
+
+  @media (max-width: 549px) {
+    @apply text-5xl;
+  }
+}
+
+.codepen-svg,
+.codesandbox-svg,
+.github-svg,
+.toggle {
+  fill: var(--text-copy-primary);
+}
+
+.toggle-container {
+  width: 48px;
+  height: 48px;
+
+  &:hover {
+    border: 2px solid var(--text-copy-primary);
+  }
+}
+
+.markdown-body {
+  color: var(--text-copy-primary);
+
+  p {
+    margin: 30px 0;
+  }
+
+  h2 {
+    margin: 50px 0 20px;
+    font-size: 24px;
+    display: inline-block;
+  }
+
+  hr {
+    margin: 50px 0;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.pagination {
+  &.disabled {
+    color: var(--bg-background-secondary);
+  }
+
+  &.cursor-not-allowed {
+    visibility: hidden;
+  }
+}
+
+.post {
+  .line {
+    margin-left: 10px;
+  }
+
+  pre {
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+}
+
+.bubble-footer {
+  width: calc(100% - 20px);
+  margin: 0 auto 15px;
+  border-radius: 10px;
+}
+
 .experience {
   padding-bottom: 100px;
   position: relative;

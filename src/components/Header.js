@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'gatsby';
 import ThemeSwitcher from './ThemeSwitcher';
 import Logo from './Logo';
-import '../styles/header.css'
 
 const Header = ({ theme, action, isOpen, toggle }) => {
   return (
@@ -24,9 +23,9 @@ const Header = ({ theme, action, isOpen, toggle }) => {
         <div
           className={`uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0 ${isOpen ? "block" : "hidden"}`}>
           <ThemeSwitcher theme={theme} action={action} />
-          <Link to="/blog" activeClassName="active" title='Blog' onClick={toggle} className="mr-8 mb-6 lg:mb-0 text-copy-primary">Blog</Link>
-          <Link to="/experience" activeClassName="active" title='Experience' onClick={toggle} className="mr-8 mb-6 lg:mb-0 text-copy-primary">Experience</Link>
-          <Link to="/projects" activeClassName="active" title='Projects' onClick={toggle} className="mr-8 mb-6 lg:mb-0 text-copy-primary">Projects</Link>
+          <Link to="/blog" activeClassName="active" title='Blog' onClick={toggle} className="mr-8 text-copy-primary">Blog</Link>
+          <Link to="/experience" activeClassName="active" title='Experience' onClick={toggle} className="mr-8 text-copy-primary">Experience</Link>
+          <Link to="/projects" activeClassName="active" title='Projects' onClick={toggle} className="mr-8 text-copy-primary">Projects</Link>
         </div>
       </nav>
     </header>

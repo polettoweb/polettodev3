@@ -2,7 +2,6 @@ import React from 'react'
 import resumeData from "../json/resume.json";
 import ExpCard from "../components/partials/ExpCard";
 import Layout from '../components/Layout';
-import '../styles/exp.scss'
 
 const Experience = () => {
   const data = resumeData
