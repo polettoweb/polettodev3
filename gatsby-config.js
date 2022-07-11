@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://www.poletto.dev`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
