@@ -14,13 +14,15 @@ export default function BlogPostTemplate({
         <h1 className="text-4xl font-bold leading-tight">{frontmatter.title}</h1>
         <div className="text-xl text-copy-secondary mb-4">{frontmatter.date} - {markdownRemark.timeToRead} min read</div>
         <div className="flex mb-8 text-sm">
-          {/* <Link
-              to="tag.path"
-            v-for="tag in $page.post.tags"
-            :key="tag.id"
-          className=" border border-copy-secondary rounded-full px-4 py-2 mr-4 hover:border-transparent hover:bg-copy-primary hover:text-white">
-            {{ tag.title }}
-          </Link> */}
+          {
+            frontmatter.tags.map(tag => {
+              return <span
+                key={tag}
+                className=" border border-copy-secondary rounded-full px-4 py-2 mr-4 hover:border-transparent hover:bg-copy-primary hover:text-white">
+                {tag}
+              </span>
+            })
+          }
         </div>
         <div className="markdown-body mb-24" dangerouslySetInnerHTML={{ __html: html }} />
         <div className="mb-8 text-center">
@@ -35,9 +37,12 @@ export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      timeToRead
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        tags
+        slug
       }
     }
   }

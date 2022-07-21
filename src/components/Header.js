@@ -20,13 +20,14 @@ const Header = ({ theme, action, isOpen, toggle }) => {
             </svg>
           </button>
         </div>
-        <div
+        <ul
           className={`uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0 ${isOpen ? "block" : "hidden"}`}>
-          <ThemeSwitcher theme={theme} action={action} />
-          <Link to="/blog" activeClassName="active" title='Blog' onClick={toggle} className="mr-8 text-copy-primary">Blog</Link>
-          <Link to="/experience" activeClassName="active" title='Experience' onClick={toggle} className="mr-8 text-copy-primary">Experience</Link>
-          <Link to="/projects" activeClassName="active" title='Projects' onClick={toggle} className="mr-8 text-copy-primary">Projects</Link>
-        </div>
+          <li><ThemeSwitcher theme={theme} action={action} /> </li>
+          <li><Link to="/" activeClassName="active" title='About' onClick={toggle} className="mr-8 text-copy-primary">About</Link></li>
+          <li><Link to="/blog" activeClassName="active" title='Blog' onClick={toggle} className="mr-8 text-copy-primary">Blog</Link></li>
+          <li><Link to="/experience" activeClassName="active" title='Experience' onClick={toggle} className="mr-8 text-copy-primary">Experience</Link></li>
+          <li><Link to="/projects" activeClassName="active" title='Projects' onClick={toggle} className="mr-8 text-copy-primary">Projects</Link></li>
+        </ul>
       </nav>
     </header>
   );

@@ -61,8 +61,8 @@ const blog = ({ data, pageContext }) => {
 export default blog
 
 export const pageQuery = graphql`
-  query Getblog {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query Getblogfortags($tag: String) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { frontmatter: { tags: { in: [$tag] } } }) {
       edges {
         node {
           html

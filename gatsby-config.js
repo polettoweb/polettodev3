@@ -17,6 +17,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-awesome-pagination`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     'gatsby-transformer-remark',
@@ -38,7 +39,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              // maxWidth: 590
+              maxWidth: 720
             }
           }
         ],
